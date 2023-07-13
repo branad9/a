@@ -1,0 +1,3 @@
+const toggleClassF=function(element){if(element){element.forEach(el=>{const childEl=el.children;[...childEl].forEach((clE)=>{clE.addEventListener("click",function(){const allChildren=this.parentElement.children;[...allChildren].forEach((el)=>{el.classList.remove("active");})
+this.classList.add("active");});});})}}
+const colorList=document.querySelectorAll(".color-list");toggleClassF(colorList);const sizeList=document.querySelectorAll(".size-list");toggleClassF(sizeList);const shopColorLis=document.querySelectorAll(".filter-color");toggleClassF(shopColorLis);
